@@ -1,0 +1,69 @@
+.App {
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(175, 8, 42);
+  }
+  &__cardsList {
+    marker: none;
+    background-color: blanchedalmond;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    padding: 100px;
+    padding-top: 30px;
+    &__pokemon {
+      margin: 0 10px 20px 0px;
+      height: 230px;
+      width: 170px;
+      display: inline-block;
+      border-radius: 10px;
+      border: 1px solid #aaa7a7;
+      background-color: rgba(228, 238, 241, 0.76);
+      &--imageSection {
+        border-radius: 10px;
+        background-color: rgb(220, 245, 245);
+        display: flex;
+        justify-content: center;
+        height: 116px;
+        .image {
+          margin: 15px;
+          padding: 10px;
+        }
+      }
+
+      &--nameSection {
+        background-color: rgba(252, 164, 132, 0.995);
+        border-top: 2px solid #e1aeae;
+        border-bottom: 2px solid #aaa7a7;
+        text-transform: capitalize;
+        text-align: center;
+        color: rgb(68, 68, 199);
+        .title {
+          margin: 10px;
+        }
+      }
+
+      &--typeSection {
+        color: green;
+        text-transform: uppercase;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .type {
+          background-color: #f7a4a4f8;
+          padding: 7px;
+          border-radius: 10px;
+          color: white;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
